@@ -1,38 +1,544 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+
+ html, body {
+  background: black;
+  color: white!important;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('./images/grid.png');
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.burger-menu {
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wholeapp {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.slogan {
+  font-size: 18px;
+  text-align: right;
+  font-weight: 500;
+  margin-top: 53px;
+  margin-bottom: 54px;
+  letter-spacing: 1.3px;
+}
+
+.lines {
+  position: absolute;
+  left: 0;
+  top: 800px;
+  height: 500px!important;
+}
+
+.cta-wrapper {
+  display: inline-block;
+  text-align: right;
+  margin-top: 51px;
+  margin-left: -150px;
+}
+
+.cta {
+  background: white;
+  outline: none;
+  border: none;
+  font-size: 27px;
+  font-weight: 700;
+  border-radius: 8px;
+  box-shadow: 0 0 8px 0 #ced8f7;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  padding: 1px 15px;
+}
+
+.coins {
+  margin-left: -70px;
+  width: 140%;
+  margin-top: 70px;
+}
+
+.logo {
+  display: block;
+  margin-bottom: 47px;
+}
+
+.header-images-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+}
+
+.shark-img {
+  margin-top: 80px;
+  max-width:1100px;
+  margin-left: -340px;
+  z-index: 1;
+  position: relative;
+}
+
+.big-margin {
+  margin-top: 200px;
+}
+
+.lines {
+  width: 100%;
+  margin-top: -250px;
+  z-index: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.box-label {
+  font-weight: 500;
+  font-size: 35px;
+}
+
+.box-text {
+  border: 1px solid white;
+  border-radius: 60px;
+  padding: 60px 30px;
+  text-align: center;
+  font-size: 20px;
+  height: 300px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
+  flex-direction: column;
+} 
+
+.pipe {
+  width: 220%;
+  margin-top: -800px;
+  margin-left: -800px;
 }
 
-.App-link {
-  color: #61dafb;
+.text-right {
+  text-align: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.pipe-box {
+  position: relative;
+}
+
+.bg-centered {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.right-box {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 400px;
+
+}
+
+.z-index {
+  position: relative;
+  z-index: 2;
+}
+
+.left-box {
+  position: absolute;
+  top: 1290px;
+}
+
+.center-box {
+  position: absolute;
+  bottom: 650px;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: -200px;
+  margin-right: 100px;
+}
+
+
+
+.video {
+  position:absolute;
+  bottom:1721px;
+  left: 142px;
+}
+
+iframe {
+  pointer-events:none
+}
+
+
+.coin-one {
+  position: absolute;
+  right: 50px;
+  top: -400px;
+
+}
+
+.coin-two {
+  position: absolute;
+  left: 300px;
+  bottom: 600px;
+}
+
+@media only screen and (min-width: 1700px) {
+  .cta-wrapper {
+    margin-left: -250px;
   }
-  to {
-    transform: rotate(360deg);
+  .coins {
+    margin-left:0px;
   }
 }
+
+@media only screen and (max-width: 1700px) {
+  .shark-img {
+    margin-top: 90px;
+    max-width:1000px;
+    margin-left: -240px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .right-box {
+    top: 290px;
+  }
+  .left-box {
+    top: 1050px;
+  }
+
+  .video {
+    top: 1807px;
+    left: 9px;
+  }
+
+  .pipe {
+    width: 220%;
+    margin-top: -720px;
+    margin-left: -700px;
+  }
+
+  .coin-two {
+    left: 250px;
+    bottom: 500px;
+  }
+}
+
+
+@media only screen and (max-width: 1650px) {
+  .cta-wrapper {
+    margin-left: -50px;
+  }
+
+  .coins {
+    margin-left: 50px;
+  }
+
+  .box-label {
+    font-size: 24px;
+  }
+
+  .box-text {
+    font-size: 18px;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+
+  .shark-img {
+    margin-top: 260px;
+    max-width:598px;
+    margin-left: 100px;
+    z-index: 1;
+    position: relative;
+  }
+
+  .coins {
+    margin-left: 0;
+  }
+
+  .big-margin {
+    margin-top: 100px;
+  }
+  .right-box {
+    top: 250px;
+}
+  .left-box {
+    top: 1050px;
+  }
+  
+  .cta-wrapper{
+    margin-left: 0;
+  }
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .cta-wrapper {
+    margin-left: -60px;
+  }
+  .coins {
+    margin-left: 20px;
+  }
+
+  .box-text {
+    padding: 30px 15px;
+    margin-bottom: 20px;
+    margin-top: 10px!important;
+  }
+
+  .big-margin {
+    margin-top: 20px;
+  }
+
+  .center-box {
+    text-align: center;
+    width: 100%;
+    bottom: 500px;
+    left: 200px;
+  }
+
+  .right-box{
+    top: 270px;
+  }
+
+  .left-box {
+    top: 930px;
+  }
+
+
+   .box-label {
+     font-size: 20px;
+     text-align: center;
+   }
+
+   .z-index {
+     text-align: center;
+   }
+
+   .pipe {
+     margin-left: -600px;
+     margin-top: -610px;
+     width: 230%;
+   }
+
+   .video {
+     left: 76px;
+     top: 1567px;
+   }
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .cta-wrapper {
+    margin-left: 10px;
+  }
+  .coins {
+    margin-left: -35px;
+  }
+  .burger-menu {
+    display: none;
+  }
+
+  .left-box {
+    top: 920px;
+    text-align: center;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 994px) {
+  .shark-img {
+    display: none!important;
+  }
+
+  .center-box {
+
+    margin: 0;
+  }
+
+  .coins {
+    display: none;
+  }
+
+  .lines {
+    display: none;
+  }
+
+  .pipe {
+    display: none!important;
+  }
+
+
+  .box-label {
+    font-size: 35px;
+  }
+
+  .z-index {
+    text-align: center;
+    margin-top: 130px;
+  }
+
+  .box-text {
+    width: 100%;
+    font-size: 20px;
+    background:black;
+  }
+
+  .right-box{
+   position: static;
+   width: 100%;
+   margin-top: 130px;
+   
+  }
+
+  .left-box {
+    position: static;
+    margin-top: 130px;
+  }
+  .center-box {
+    position: static;
+    width: 100%;
+    margin-top: 130px;
+  }
+  .cageshark {
+    display: none;
+   }
+
+   .cta-wrapper {
+     text-align: left;
+   }
+
+   .slogan {
+     text-align: left;
+     width: 80%;
+   }
+
+   .cta {
+     border-radius: 30px;
+     box-shadow: 0 0 17px 0px white;
+     padding: 11px 23px;
+     margin-left: 12px;
+   }
+
+   .poolshark-name {
+     margin-top: 30px;
+   }
+
+
+   .mobile-lines {
+    position: absolute;
+    margin: 0;
+    top: 0px;
+    bottom: 0;
+    width: 100vh;
+    left: 300px;
+    z-index: 0;
+    opacity: .8;
+  }
+
+  .wholeapp {
+    background-image: url("./images/mobilelines.svg");
+    background-repeat: no-repeat;
+    background-position: 500px;
+    z-index: 0;
+  }
+  .burger-menu {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 565px) {
+  .poolshark-name {
+    width: 70%;
+  }
+
+  .wholeapp {
+    background-position: 100px;
+  }
+
+  .slogan {
+    width: 70%;
+    font-size: 29px;
+    margin-bottom: 200px;
+  }
+
+  .wholeapp {
+    background-position: 220px;
+  }
+
+  .box-label {
+    text-align: left;
+    font-size: 33px;
+  }
+
+  .sm-label {
+    width: 70%;
+    margin-bottom: 50px;
+  }
+
+  .sm-label-two {
+    margin-bottom: 50px;
+    text-align: left;
+  }
+
+  .strike {
+    text-align: left!important;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 400px) {
+  .poolshark-name {
+    width: 70%;
+  }
+
+
+  .wholeapp {
+    background-position: 150px -400px;
+  }
+
+  .slogan {
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .cta {
+    margin-left: 40px;
+  }
+
+  .box-text {
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 17px;
+  }
+  .box-label {
+    width: 95%;
+    font-size: 27px;
+  }
+
+}
+
+
+
+
