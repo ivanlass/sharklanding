@@ -5,9 +5,9 @@ function ThirdBox() {
   var w = window.innerWidth;
   return (
     <div className="left-box">
-      <div className={`${w >994? "col-md-6 ":"col-md-12 "}`}>
+      <div className="col-lg-8 col-sm-12" >
         <p className="box-label sm-label">Roam the Open DeFi Waters</p>
-        <div className="box-text mt-5" style={{backgroundImage: "url(" + shark + ")"}}>
+        <div className="box-text mt-5">
         Deposit your managed assets in a staking or yield farming contract to have the greatest 
         advantage against the market and convert to a more preferred asset once your reward threshold 
         is met.

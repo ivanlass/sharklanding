@@ -8,6 +8,7 @@ import LastBox from './LastBox';
 import CoinVideos from './CoinVideos';
 import BigVideo from './BigVideo';
 import Pipes from './Pipes';
+import Footer from './Footer';
 
 var w = window.innerWidth;
 
@@ -29,6 +30,7 @@ function App() {
           <LastBox />
         </div>
       </div>
+      <Footer />
     </div>
   </div>
   );

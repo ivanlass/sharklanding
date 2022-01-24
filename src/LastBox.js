@@ -5,12 +5,11 @@ function LastBox() {
   var w = window.innerWidth;
   return (
     <div className="center-box">
-      <div className={`${w >994? "col-md-6 ":"col-md-12 "}`}>
-        <p className="box-label sm-label-two">Strike as a Community</p>
-        <div className=" mt-5 bg-centered box-text" style={{backgroundImage: "url(" + shark + ")"}}>
-        Govern exactly how the "magic hand of DeFi" operates by voting with other
-         FIN token holders to secure the next major liquidity source or DeFi 
-         protocol integration for the PoolSharks community.
+      <div className="col-lg-8 col-sm-12 ">
+        <p className="box-label sm-label-two">Reduced Operating Costs <p className='white-txt'>for DAOs and Protocols.</p></p>
+        <div className=" mt-5 box-text">
+        Forward operations to PoolSharks in order to better manage and reduce upkeep costs 
+        for standard operations like treasury management and autocompounding.
         </div>
     </div>
     </div>
