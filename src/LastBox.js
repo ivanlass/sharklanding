@@ -1,5 +1,5 @@
 import './App.css';
-import shark from './images/lastshark.png'
+
 
 function LastBox() {
   var w = window.innerWidth;

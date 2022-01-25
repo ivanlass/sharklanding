@@ -30,8 +30,8 @@ function App() {
           <LastBox />
         </div>
       </div>
-      <Footer />
     </div>
+      <Footer />
   </div>
   );
 }

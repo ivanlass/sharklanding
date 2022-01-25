@@ -1,5 +1,5 @@
 import './App.css';
-import shark1 from './images/sharkbox.png'
+
 
 function TextBox() {
   var w = window.innerWidth;

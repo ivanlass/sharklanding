@@ -5,7 +5,7 @@
   background: black;
   color: white!important;
   font-family: 'Montserrat', sans-serif;
-  /* background-image: url('./images/grid.png'); */
+  background-image: url('./images/grid.png');
   overflow-x: hidden;
 }
 
@@ -14,6 +14,7 @@
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgb(0, 0, 0);
 }
 
 .footer > * {
@@ -80,7 +81,7 @@
   display: inline-block;
   text-align: right;
   margin-top: 51px;
-  margin-left: -150px;
+  margin-left: -50px;
 }
 
 .cta {
@@ -98,9 +99,8 @@
 }
 
 .coins {
-  margin-left: -70px;
   width: 140%;
-  margin-top: 70px;
+  margin-left: 150px;
 }
 
 .logo {
@@ -159,7 +159,7 @@
 .pipe {
   width: 220%;
   margin-top: -800px;
-  margin-left: -800px;
+  margin-left: -705px;
 }
 
 .text-right {
@@ -206,8 +206,8 @@
 
 .video {
   position:absolute;
-  bottom:1721px;
-  left: 142px;
+  bottom:1728px;
+  left: 180px;
 }
 
 iframe {
@@ -216,26 +216,26 @@ iframe {
 
 .first-video {
   position: absolute;
-  left: -39px;
-  top: 171px;
+  left: -22px;
+  top: 165px;
 }
 
 .second-video {
   position: absolute;
-  left: 464px;
+  left: 824px;
   top: 1024px;
 }
 
 .third-video {
   position: absolute;
-  left: 414px;
-  top: 1763px;
+  left: 37px;
+  top: 1769px;
 }
 
 .fourth-video {
   position: absolute;
-  left: 575px;
-  top: 3063px;
+  left: 905px;
+  top: 3074px;
 }
 
 
@@ -257,16 +257,19 @@ iframe {
   .cta-wrapper {
     margin-left: -250px;
   }
-  .coins {
-    margin-left:0px;
-  }
+
 }
 
 @media only screen and (max-width: 1700px) {
+
   .shark-img {
-    margin-top: 90px;
-    max-width:1000px;
-    margin-left: -240px;
+    margin-top: 140px;
+    max-width:900px;
+    margin-left: -110px;
+  }
+
+  .coins {
+    margin-left: -30px;
   }
 }
 
@@ -299,8 +302,8 @@ iframe {
   }
 
   .video {
-    top: 1888px;
-    left: 108px;
+    top: 1882px;
+    left: 60px;
   }
 
   .pipe {
@@ -314,46 +317,38 @@ iframe {
     bottom: 500px;
   }
   .first-video {
-    top: 115px;
-    left: -76px;
+    top: 109px;
+    left: -141px;
   }
 
   .second-video {
     position: absolute;
-    left: 308px;
-    top: 845px;
+    left: 534px;
+    top: 847px;
   }
 
   .third-video {
     position: absolute;
-    left: 346px;
-    top: 1475px;
+    left: -59px;
+    top: 1482px;
   }
 
   .fourth-video {
     position: absolute;
-    left: 483px;
-    top: 2591px;
+    left: 685px;
+    top: 2600px;
   }
 }
 
 
 @media only screen and (max-width: 1650px) {
   .cta-wrapper {
-    margin-left: -50px;
+    margin-left: -30px;
   }
 
   .coins {
-    margin-left: 50px;
+    margin-left: -30px;
   }
-
-  /* .box-label {
-    font-size: 24px;
-  }
-
-  .box-text {
-    font-size: 18px;
-  } */
 
   .right-box {
     right: 0;
@@ -403,33 +398,54 @@ iframe {
 
 
 @media only screen and (max-width: 1200px) {
+  .logo {
+    width: 100px;
+  }
+
+  .poolshark-name {
+    width: 400px;
+  }
+
   .cta-wrapper {
     margin-left: -60px;
+    width: 400px;
   }
-  .coins {
-    margin-left: 20px;
+  .slogan {
+    font-size: 14px;
+  }
+
+  .shark-img {
+    margin-left: -60px;
+  }
+
+  .first-box {
+    margin-left: -70px;
   }
 
   .box-text {
     font-size: 20px;
   }
 
-
+  .coin-two {
+    height: 100px;
+  }
 
   .center-box {
     text-align: right;
     width: 100%;
-    bottom: 500px;
+    bottom: 580px;
+    margin-right: -60px;
   }
 
   .right-box{
-    top: 270px;
+    top: 340px;
+    margin-right: -60px;
   }
 
   .left-box {
     top: 1000px;
+    margin-left: -70px;
   }
-
 
    .box-label {
      font-size: 25px;
@@ -441,36 +457,36 @@ iframe {
    }
 
    .pipe {
-     margin-left: -600px;
+     margin-left: -570px;
      margin-top: -610px;
      width: 230%;
    }
 
    .video {
-     left: 106px;
-     top: 1666px;
+     left: 95px;
+     top: 1663px;
    }
    .first-video {
-    top: 120px;
-    left: -87px;
+    top: 114px;
+    left: -117px;
   }
 
   .second-video {
     position: absolute;
-    left: 278px;
+    left: 502px;
     top: 758px;
   }
 
   .third-video {
     position: absolute;
-    left: 314px;
-    top: 1305px;
+    left: -10px;
+    top: 1310px;
   }
 
   .fourth-video {
     position: absolute;
-    left: 434px;
-    top: 2283px;
+    left: 640px;
+    top: 2291px;
   }
 }
 
@@ -535,6 +551,10 @@ iframe {
     background:black;
   }
 
+  .first-box {
+    margin-left: 0;
+  }
+
   .right-box{
    position: static;
    width: 100%;
@@ -545,15 +565,19 @@ iframe {
   .left-box {
     position: static;
     margin-top: 130px;
+    margin-left: 0;
   }
+
+  .footer {
+    margin-top: 100px;
+  }
+
   .center-box {
     position: static;
     width: 100%;
     margin-top: 130px;
   }
-  .cageshark {
-    display: none;
-   }
+
 
    .cta-wrapper {
      text-align: left;

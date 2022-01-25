@@ -1,5 +1,5 @@
 import './App.css';
-import shark from './images/thirdshark.png'
+
 
 function ThirdBox() {
   var w = window.innerWidth;

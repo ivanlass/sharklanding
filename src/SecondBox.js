@@ -1,5 +1,5 @@
 import './App.css';
-import secondShark from './images/secondshark.png'
+
 
 function SecondBox() {
   var w = window.innerWidth;
